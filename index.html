@@ -795,60 +795,63 @@
         <div id="map" class="map"></div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
+                <!-- <div class="col-lg-8">
                     <div class="contact-form-card">
                         <h4 class="contact-title">Send a message</h4>
-                        <form action="">
+                        <form id="contactForm">
                             <div class="form-group">
-                                <input  class="form-control" type="text" placeholder="Name *" required>
+                                <input  class="form-control" type="text" placeholder="Name *" id="name" required>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" type="email" placeholder="Email *" required>
+                                <input class="form-control" type="email" placeholder="Email *" id="email" required>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" id=" placeholder="Message *" rows="7" required></textarea>
+                                <textarea class="form-control" placeholder="Message *" rows="7" id="msg" required></textarea>
                             </div>
                             <div class="form-group ">
-                                <button type="submit" class="form-control btn btn-primary" >Send Message</button>
+                                <button type="submit" class="form-control btn btn-primary" id="Submit" onclick="saveData()">Send Message</button>
                             </div>
                         </form>
                     </div>
-                </div>
+                </div> -->
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSepGOnyfN7N1Y28eFvd6thzU2P3TZS-0HXD8vKKy4NgUSsCBw/viewform?embedded=true" width="640" height="844" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                 <div class="col-lg-4">
-                    <div class="contact-info-card">
-                        <h4 class="contact-title">Get in touch</h4>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-mobile icon-md"></i>
+                    <!-- <form method="post" action="functions.php"> -->
+                        <div class="contact-info-card">
+                            <h4 class="contact-title">Get in touch</h4>
+                            <div class="row mb-2">
+                                <div class="col-1 pt-1 mr-1">
+                                    <i class="ti-mobile icon-md"></i>
+                                </div>
+                                <div class="col-10 ">
+                                    <h6 class="d-inline">Phone : <br> <span class="text-muted"><a href="callto:+16085150162">+1 (608) 515-0162</a></span></h6>
+                                </div>
                             </div>
-                            <div class="col-10 ">
-                                <h6 class="d-inline">Phone : <br> <span class="text-muted"><a href="callto:+16085150162">+1 (608) 515-0162</a></span></h6>
+                            <div class="row mb-2">
+                                <div class="col-1 pt-1 mr-1">
+                                    <i class="ti-map-alt icon-md"></i>
+                                </div>
+                                <div class="col-10">
+                                    <h6 class="d-inline">Address :<br> <span class="text-muted">Madison, WI</span></h6>
+                                </div>
                             </div>
+                            <div class="row mb-2">
+                                <div class="col-1 pt-1 mr-1">
+                                    <i class="ti-envelope icon-md"></i>
+                                </div>
+                                <div class="col-10">
+                                    <h6 class="d-inline">Email :<br> <span class="text-muted"><a href="mailto:mpdeshmukh@wisc.edu">mpdeshmukh@wisc.edu</a></span></h6>
+                                </div>
+                            </div>
+                            <ul class="social-icons pt-4">
+                                <!-- <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li> -->
+                                <li class="social-item"><a class="social-link text-dark" href="https://twitter.com/Maddy_Deshmukhh"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                                <!-- <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-google" aria-hidden="true"></i></a></li> -->
+                                <li class="social-item"><a class="social-link text-dark" href="https://www.linkedin.com/in/mayur-deshmukh2104/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                                <li class="social-item"><a class="social-link text-dark" href="https://github.com/mayurdeshmukh2104"><i class="ti-github" aria-hidden="true"></i></a></li>
+                            </ul> 
                         </div>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-map-alt icon-md"></i>
-                            </div>
-                            <div class="col-10">
-                                <h6 class="d-inline">Address :<br> <span class="text-muted">Madison, WI</span></h6>
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-envelope icon-md"></i>
-                            </div>
-                            <div class="col-10">
-                                <h6 class="d-inline">Email :<br> <span class="text-muted"><a href="mailto:mpdeshmukh@wisc.edu">mpdeshmukh@wisc.edu</a></span></h6>
-                            </div>
-                        </div>
-                        <ul class="social-icons pt-4">
-                            <!-- <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li> -->
-                            <li class="social-item"><a class="social-link text-dark" href="https://twitter.com/Maddy_Deshmukhh"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                            <!-- <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-google" aria-hidden="true"></i></a></li> -->
-                            <li class="social-item"><a class="social-link text-dark" href="https://www.linkedin.com/in/mayur-deshmukh2104/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="https://github.com/mayurdeshmukh2104"><i class="ti-github" aria-hidden="true"></i></a></li>
-                        </ul> 
-                    </div>
+                    <!-- </form> -->
                 </div>
             </div>
 
@@ -877,6 +880,24 @@
 
     <!-- JohnDoe js -->
     <script src="assets/js/johndoe.js"></script>
+
+    <script>
+        function saveData() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("msg").value;
+        
+        var data = "Name: " + name + "\nEmail: " + email + "\nMessage: " + message;
+        
+        var file = new Blob([data], {type: 'text/plain'});
+        var fileName = "contact.txt";
+        
+        var a = document.createElement("a");
+        a.href = URL.createObjectURL(file);
+        a.download = fileName;
+        a.click();
+        }
+    </script>
 
 </body>
 </html>
